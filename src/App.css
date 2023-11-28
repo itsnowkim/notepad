@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+  width: 100vw;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* Center Container */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  /* Coloring */
+  background: #FBFBFD;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  width: 100%; /* 부모 요소의 가로 길이에 맞게 설정 */
+  box-sizing: border-box; /* 내부 padding, border를 포함한 전체 요소 크기로 설정 */
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  margin-top: 20px;
+  margin-bottom:0;
+}
+ul{
+  list-style:none;
+  padding-left:0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 40px; /* 원하는 높이로 조절 */
+  list-style:none;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+li a {
+  color: inherit; /* 상위 요소의 색상을 상속받음 (기본 값은 파란색) */
+  text-decoration: none; /* 언더라인 제거 */
+}
+
+::placeholder {
+  color: #ADB5BD;
+  opacity: 1; /* Firefox */
+}
+input:focus , select:focus, option:focus, textarea:focus, button:focus{
+  outline: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer
+}
+
+.App-Container{
+ width: 350px; 
+ height: 600px;
+ border: 1px solid black;
+ border-radius: 20px;
+
+ padding:20px
+}
+
+.Paragraph{
+ white-space: pre-line; 
 }
